@@ -1,4 +1,0 @@
-python-telegram-bot==20.8
-nest-asyncio
-requests
-urllib3

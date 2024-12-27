@@ -1,8 +1,0 @@
-python-telegram-bot
-nest-asyncio
-requests
-urllib3
-python-dotenv
-flask
-uvicorn
-FastAPI

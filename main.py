@@ -20,6 +20,19 @@ from pathlib import Path
 from urllib3.util.retry import Retry
 import uvicorn
 from fastapi import FastAPI
+import os
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello, World!"
+
+if __name__ == "__main__":
+    PORT = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=PORT)
+
 
 # Local import (make sure this file exists and is correctly placed in the directory)
 try:
